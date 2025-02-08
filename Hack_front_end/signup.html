@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div >
+            <a href="/index.html"><img src="/images/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <form id="signupForm" class="login-form signup-form">
+            <h1>Create Account</h1>
+            <div class="user-type">
+                <div class="user-type-option">
+                    <input type="radio" name="userType" value="patient" checked>
+                    <span class="radio-label">Patient</span>
+                </div>
+                <div class="user-type-option">
+                    <input type="radio" name="userType" value="doctor">
+                    <span class="radio-label">Doctor</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" id="fullName" required>
+                <label for="fullName">Full Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group doctor-field hidden">
+                <input type="text" id="specialization">
+                <label for="specialization">Specialization</label>
+            </div>
+            <div class="form-group doctor-field hidden">
+                <input type="text" id="licenseNumber">
+                <label for="licenseNumber">License Number</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirmPassword" required>
+                <label for="confirmPassword">Confirm Password</label>
+            </div>
+            <button type="submit" id="signupButton">
+                <span class="button-text">Sign Up</span>
+                <div class="spinner"></div>
+            </button>
+            <p class="signup-link">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
